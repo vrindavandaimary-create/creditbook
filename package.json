@@ -1,0 +1,18 @@
+{
+  "name": "creditbook",
+  "version": "2.0.0",
+  "description": "CreditBook - Business Accounting PWA",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm start",
+    "dev": "concurrently -k -n BACKEND,FRONTEND -c cyan,magenta \"npm run backend\" \"npm run frontend\"",
+    "build": "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
