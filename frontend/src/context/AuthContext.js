@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
 // Hardcoded Render backend URL — no /api at the end
-axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'https://creditbook-eqjh.onrender.com';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'https://creditbook-8ty2.onrender.com';
 
 const Ctx = createContext(null);
 export const useAuth = () => useContext(Ctx);
